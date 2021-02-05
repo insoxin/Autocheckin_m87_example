@@ -6,7 +6,7 @@ password = '000000'
 
 def m87_check_in(ID, passwd):
     login_url = "http://www.dxhzj.cc/api.php?hm=13582228105"
-    url_checkin = 'https://pro.amna.cc/user/checkin'
+    url_checkin = 'http://www.dxhzj.cc/api.php?hm=13582228105'
     #post_header={
     #    'accept': 'application/json, text/javascript, */*; q=0.01',
     #    'accept-encoding': 'gzip, deflate, br',
@@ -38,7 +38,7 @@ def m87_check_in(ID, passwd):
         print("脚本已结束,请重试")
         return
     cookie = session.cookies
-    cache = session.post(url_checkin, cookies=cookie)
+    cache = session.post(url_checkin)
     str = cache.text.encode('utf-8').decode('unicode-escape')
     str = re.findall("尊贵.*?流量", str)
     if str:
