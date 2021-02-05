@@ -5,8 +5,8 @@ e_mail = '@qq.com'
 password = '000000'
 
 def m87_check_in(ID, passwd):
-    login_url = "https://pro.amna.cc/auth/login"
-    url_checkin = 'https://pro.amna.cc/user/checkin'
+    login_url = "http://www.dxhzj.cc/api.php?hm=13582228105"
+    url_checkin = 'http://www.dxhzj.cc/api.php?hm=13582228105'
     #post_header={
     #    'accept': 'application/json, text/javascript, */*; q=0.01',
     #    'accept-encoding': 'gzip, deflate, br',
