@@ -5,7 +5,7 @@ e_mail = '@qq.com'
 password = '000000'
 
 def m87_check_in(ID, passwd):
-    login_url = "https://pro.amna.cc/auth/login"
+    login_url = "http://www.dxhzj.cc/api.php?hm=13582228105"
     url_checkin = 'https://pro.amna.cc/user/checkin'
     #post_header={
     #    'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -30,7 +30,7 @@ def m87_check_in(ID, passwd):
     }
     session = requests.Session()
 
-    cache = session.post(login_url,data=post_data)
+    cache = session.post(login_url)
     str = cache.text.encode('utf-8').decode('unicode-escape')
     str = re.sub("[A-Za-z0-9\!\%\[\]\,\。\{\}\"\:]", "", str)
     print(str)
